@@ -1,0 +1,4 @@
+12 apr. 2024 22:18:53,868 INFO  org.example.repository.adminrepo.AdminRepoDB 26 <init> - Initializing AdminRepoDB  with properties: {} 
+12 apr. 2024 22:18:53,876 INFO  org.example.repository.participantrepo.ParticipantRepoDB 23 <init> - Initializing ParticipantRepoDB  with properties: {} 
+12 apr. 2024 22:18:53,877 INFO  org.example.repository.contestrepo.ContestRepoDB 26 <init> - Initializing ContestRepoDB  with properties: {} 
+12 apr. 2024 22:18:53,879 INFO  org.example.repository.participationrepo.ParticipationRepoDB 23 <init> - Initializing ParticipationRepoDB  with properties: {} 

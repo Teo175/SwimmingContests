@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="601.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="29.0" layoutY="148.0" prefHeight="43.0" prefWidth="168.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="29.0" layoutY="216.0" prefHeight="43.0" prefWidth="168.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="122.0" layoutY="297.0" mnemonicParsing="false" onAction="#handle_login" prefHeight="35.0" prefWidth="74.0" text="LogIn" />
+      <Label layoutX="30.0" layoutY="65.0" prefHeight="58.0" prefWidth="184.0" text="SIGN IN:" textFill="#fcf7f7">
+         <font>
+            <Font name="Book Antiqua" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="535.0" layoutY="361.0" mnemonicParsing="false" onAction="#handle_exit" text="Exit" />
+   </children>
+</AnchorPane>

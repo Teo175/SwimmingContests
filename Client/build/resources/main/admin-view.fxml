@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.AdminController">
+   <children>
+       <ImageView fitHeight="536.0" fitWidth="747.0" layoutX="-15.0" layoutY="-85.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@img2.jpg" />
+           </image>
+       </ImageView>
+      <Button fx:id="logoutButton" layoutX="647.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="26.0" prefWidth="67.0" text="Exit" textFill="#3250e4" />
+      <TableView fx:id="table_contests" layoutX="445.0" layoutY="57.0" prefHeight="274.0" prefWidth="269.0">
+        <columns>
+          <TableColumn fx:id="table_column_1" prefWidth="78.19999694824219" text="Distance" />
+          <TableColumn fx:id="table_column_2" prefWidth="78.0" text="Style" />
+            <TableColumn fx:id="table_column_3" prefWidth="110.39999389648438" text="No. of Participants" />
+        </columns>
+      </TableView>
+      <Label layoutX="445.0" layoutY="25.0" prefHeight="31.0" prefWidth="222.0" text="About contests:" textFill="#faf7f7">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="290.0" layoutY="290.0" prefHeight="31.0" prefWidth="137.0" promptText="Name" />
+      <TextField fx:id="age" layoutX="289.0" layoutY="330.0" prefHeight="31.0" prefWidth="138.0" promptText="Age" />
+      <Button fx:id="add" layoutX="324.0" layoutY="365.0" mnemonicParsing="false" onAction="#handle_add_participant" prefHeight="31.0" prefWidth="67.0" text="Add" />
+      <TableView fx:id="table_search" layoutX="3.0" layoutY="57.0" prefHeight="226.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="table_column_name" prefWidth="63.39999693632126" text="Name" />
+          <TableColumn fx:id="table_column_age" prefWidth="41.0" text="Age" />
+            <TableColumn fx:id="table_column_contests" prefWidth="329.6000061035156" text="Contests" />
+        </columns>
+      </TableView>
+      <Label layoutX="8.0" layoutY="20.0" prefHeight="42.0" prefWidth="288.0" text="About one contest:" textFill="#f7f7f7">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="search" layoutX="111.0" layoutY="349.0" mnemonicParsing="false" onAction="#handle_search" prefHeight="31.0" prefWidth="67.0" text="Search" />
+      <ComboBox fx:id="distance_combo" layoutX="29.0" layoutY="305.0" prefHeight="31.0" prefWidth="103.0" promptText="Distance" />
+      <ComboBox fx:id="style_combo" layoutX="152.0" layoutY="305.0" prefHeight="31.0" prefWidth="103.0" promptText="Style" />
+   </children>
+</AnchorPane>
