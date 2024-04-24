@@ -1,0 +1,6 @@
+rootProject.name = 'big_project'
+include 'Model'
+include 'Server'
+include 'Network'
+include 'Client'
+
